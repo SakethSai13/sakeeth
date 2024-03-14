@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirected Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function checktest() {
+            var test = prompt("Please enter the password:");
+            if (test !== "saketh") {
+                window.location.href = "index.html";
+            } else {
+                document.body.style.backgroundImage = "url('subbu.jpg')"; // Replace 'https://example.com/background_image.jpg' with the URL of your background image
+            }
+        }
+        window.onload = checktest;
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

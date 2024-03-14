@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function checktest() {
+            var test = document.getElementById("test").value;
+            if (test === "saketh") {
+                window.location.href = "redirect.html";
+            } else {
+                alert("Incorrect test. Please try again.");
+                document.getElementById("test").value = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                <div class="card mt-5">
+                    <h1 class="text-center mb-4">Please enter the password:</h1>
+                    <div class="form-group">
+                        <input type="test" id="test" class="form-control">
+                    </div>
+                    <div class="form-group text-center">
+                        <button onclick="checktest()" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
